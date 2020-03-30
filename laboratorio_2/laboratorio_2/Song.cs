@@ -6,10 +6,11 @@ namespace laboratorio_2
     public class Song
     {
         public string Name { get; set; } // no logic statements needed, so we can uset get and set this way.
-        public string Album { get; set; }
+        public string Album { get; set; } // note that this is a faster notation to use get and set property while keeping atributes private.
         public string Artist { get; set; }
         public string Genre { get; set; }
-        public string Information() {
+        public string Information() //Informacion() method.
+        {
             string original = "Genero:genero,Artista:artista,Album:album,Nombre:nombre."; //string to return as requested
             string original_1 = original.Replace("genero", Genre);
             string original_2 = original_1.Replace("artista", Artist);
